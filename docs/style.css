@@ -25,6 +25,16 @@ body {
   left: 25vw;
   display: none;
 }
+#date {
+  position: absolute;
+  top: 25vh;
+  left: 25vw;
+}
+#time {
+  position: absolute;
+  top: 15vh;
+  left: 25vw;
+}
 
 .title {
   margin: 0;

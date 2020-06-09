@@ -1,5 +1,3 @@
-
-
 'use strict';
 
 // Put variables in global scope to make them available to the browser console.
@@ -37,18 +35,6 @@ function errorMsg(msg, error) {
   }
 }
 
-// async function init(e) {
-//   try {
-//     const stream = await navigator.mediaDevices.getUserMedia(constraints);
-//     handleSuccess(stream);
-//     e.target.disabled = true;
-//   } catch (e) {
-//     handleError(e);
-//   }
-// }
-
-//document.querySelector('#showVideo').addEventListener('click', e => init(e));
-
 async function initialize() {
   try {
     const stream = await navigator.mediaDevices.getUserMedia(constraints);
@@ -61,7 +47,6 @@ async function initialize() {
 
 //setTimeout(initialize, 2000);
 //document.querySelector('#showVideo').addEventListener('click', e => init(e));
-
 
 // image flip animations
 
