@@ -1,0 +1,2 @@
+# smrt
+smart mirror project
