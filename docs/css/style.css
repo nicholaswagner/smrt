@@ -57,3 +57,83 @@ body {
   margin: 0;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
+
+
+/*    clock   */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#brand {
+  display: block;
+  position: relative;
+  left: 10vw;
+  top: 10vh;
+}
+.clock {
+  height: 4vh;
+  color: white;
+  font-size: 5vh;
+  font-family: sans-serif;
+  line-height: 4vh;
+  display: flex;
+  position: absolute;
+  top: 22vh;
+  left: 10vw;
+  /* background: black; */
+  overflow: hidden;
+}
+
+.clock::before, .clock::after {
+  content: '';
+  width: 7ch;
+  height: 3vh;
+  /* background: linear-gradient(to top, transparent, black); */
+  position: absolute;
+  z-index: 3;
+}
+
+.clock::after {
+  bottom: 0;
+  /* background: linear-gradient(to bottom, transparent, black); */
+}
+
+.clock > div {
+  display: flex;
+}
+
+.tick {
+  line-height: 3vh;
+}
+
+.tick-hidden {
+  opacity: 0;
+}
+
+.move {
+  animation: move linear 1s infinite;
+}
+
+@keyframes move {
+  /* from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(vh);
+  } */
+}
+
